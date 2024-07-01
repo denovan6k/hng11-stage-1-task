@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 2rem;
+    background: #FFF4EA; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background: #FFF4EA;
+    transition: 1s ease-in-out;
+}
+
+.requiredimage {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.requiredimage img {
+   
+    margin-bottom: 20px;
+    
+    box-shadow: 4px 4px #000;
+}
+
+.requiredtext, .myGoalsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    margin-bottom: 20px;
+}
+
+.requiredtext span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+.myGoalsContainer span{
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+span[data-testid="mygoals"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+ul[data-testid="list"]{
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span[data-testid="slackID"],
+span[data-testid="myTrack"],
+span[data-testid="currentDayOfTheWeek"],
+span[data-testid="currentUTCTime"] {
+    font-size: 1rem;
+}
+
+a {
+    margin-top: 20px;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    
+    box-shadow: 4px 4px #000;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+}
+
+a[data-testid="hngLink"] {
+    background-color: #ff00f5;
+}
+a[data-testid="keywordLink"] {
+    background-color: #fff00f;
+}
+a[data-testid="scrapeanywebLink"] {
+    background-color: #2fff2f;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+@media (min-width: 601px) {
+    .link {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    a {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .requiredtext span, .myGoalsContainer span {
+        font-size: 1rem;
+    }
+
+    span[data-testid="slackDisplayName"] {
+        font-size: 0.9rem;
+    }
+
+    span[data-testid="slackEmail"],
+    span[data-testid="currentDay"],
+    span[data-testid="currentTimeUTC"] {
+        font-size: 0.9rem;
+    }
+
+    .link a {
+        margin: 10px 0;
+    }
+}
