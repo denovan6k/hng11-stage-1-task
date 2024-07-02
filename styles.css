@@ -7,7 +7,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +161,7 @@ a[data-testid="scrapeanywebLink"] {
     }
 }
 @media (prefers-color-scheme: dark) {
-    main {
+    body {
         background-color: #FFF4EA; /* or any other color you want */
          /* or any other color you want */
     }
