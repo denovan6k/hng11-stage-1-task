@@ -12,7 +12,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    min-height: 100vh;
+    margin: 0;
     padding: 2rem;
     background: #FFF4EA; 
 }
@@ -87,9 +88,9 @@ ul[data-testid="list"]{
 }
 
 span[data-testid="slackID"],
-span[data-testid="myTrack"],
-span[data-testid="currentDayOfTheWeek"],
-span[data-testid="currentUTCTime"] {
+span[data-testid="slackEmail"],
+span[data-testid="currentDay"],
+span[data-testid="currentTimeUTC"] {
     font-size: 1rem;
 }
 
