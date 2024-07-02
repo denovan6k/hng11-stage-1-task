@@ -160,3 +160,20 @@ a[data-testid="scrapeanywebLink"] {
         margin: 10px 0;
     }
 }
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: #FFF4EA; /* or any other color you want */
+         /* or any other color you want */
+    }
+    /* Add more styles to ensure all elements have the desired colors */
+    a[data-testid="hngLink"] {
+        background-color: #ff00f5;
+    }
+    a[data-testid="keywordLink"] {
+        background-color: #fff00f;
+    }
+    a[data-testid="scrapeanywebLink"] {
+        background-color: #2fff2f;
+    }
+    /* Add more specific rules for other elements as needed */
+}
